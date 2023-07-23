@@ -59,7 +59,7 @@ module.exports = {
     {
       parserOptions: {
         tsconfigRootDir: process.cwd(),
-        project: ['packages/trpc/tsconfig.json', 'packages/nuxt/tsconfig.json'],
+        project: ['packages/trpc/tsconfig.json', 'packages/nuxt/tsconfig.json', 'packages/uniapp/tsconfig.json'],
       },
       parser: '@typescript-eslint/parser',
       excludedFiles: ['**/*.md/*.*'],
@@ -68,6 +68,9 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
       ],
+      rules: {
+        '@typescript-eslint/ban-ts-comment': 'warn',
+      },
     },
   ],
   plugins: [

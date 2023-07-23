@@ -2,6 +2,7 @@
   "files": [],
   "references": [
     {"path": "packages/nuxt/tsconfig.json"},
-    {"path": "packages/trpc/tsconfig.json"}
+    {"path": "packages/trpc/tsconfig.json"},
+    {"path": "packages/uniapp/tsconfig.json"}
   ]
 }
