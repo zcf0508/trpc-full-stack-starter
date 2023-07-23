@@ -1,0 +1,18 @@
+{
+  "name": "nuxt",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@trpc/client": "^10.35.0",
+    "@types/node": "^18.16.19",
+    "nuxt": "^3.6.5"
+  }
+}

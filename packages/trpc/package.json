@@ -1,0 +1,18 @@
+{
+  "name": "trpc",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src",
+    "start": "node dist"
+  },
+  "devDependencies": {
+    "@trpc/server": "^10.35.0",
+    "@types/cors": "^2.8.13",
+    "@types/node": "^18.16.16",
+    "cors": "^2.8.5",
+    "tsx": "^3.12.7",
+    "zod": "^3.21.4"
+  }
+}
