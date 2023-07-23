@@ -5,7 +5,7 @@
   ],
   "compilerOptions": {
     "paths": {
-      "!!/trpc": ["../trpc/src"]
+      "!!/trpc/*": ["../trpc/src/*"]
     }
   },
 }
