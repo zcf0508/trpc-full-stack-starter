@@ -96,6 +96,7 @@ module.exports = {
     quotes: ['error', 'single'],
   },
   'ignorePatterns': [
+    'node_modules',
     '*.min.*',
     '*.d.ts',
     'dist',
