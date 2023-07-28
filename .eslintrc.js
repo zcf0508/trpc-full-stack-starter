@@ -59,7 +59,12 @@ module.exports = {
     {
       parserOptions: {
         tsconfigRootDir: process.cwd(),
-        project: ['packages/trpc/tsconfig.json', 'packages/nuxt/tsconfig.json', 'packages/uniapp/tsconfig.json'],
+        project: [
+          'packages/trpc/tsconfig.json', 
+          'packages/nuxt/tsconfig.json', 
+          'packages/uniapp/tsconfig.json', 
+          'tsconfig.test.json',
+        ],
       },
       parser: '@typescript-eslint/parser',
       excludedFiles: ['**/*.md/*.*'],
