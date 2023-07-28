@@ -13,6 +13,7 @@
     "@nuxt/devtools": "latest",
     "@trpc/client": "^10.35.0",
     "@types/node": "^18.16.19",
-    "nuxt": "^3.6.5"
+    "nuxt": "^3.6.5",
+    "vue": "^3.3.4"
   }
 }
