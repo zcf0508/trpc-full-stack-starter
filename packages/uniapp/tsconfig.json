@@ -14,7 +14,8 @@
       "dom"
     ],
     "types": [
-      "@dcloudio/types"
+      "@dcloudio/types", 
+      "@uni-helper/uni-app-types"
     ],
     "baseUrl": ".",
     "paths": {
@@ -23,6 +24,9 @@
       ],
       "!!/trpc/*": ["../trpc/src/*"]
     }
+  },
+  "vueCompilerOptions": {
+    "nativeTags": ["block", "component", "template", "slot"]
   },
   "include": [
     "src",
