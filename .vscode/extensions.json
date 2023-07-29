@@ -1,9 +1,11 @@
 {
     "recommendations": [
+        "dbaeumer.vscode-eslint",
         "vue.volar",
-        "voorjaar.windicss-intellisense",
+        "vue.vscode-typescript-vue-plugin",
         "voorjaar.windicss-intellisense",
         "antfu.unocss",
+        "zixuanchen.vitest-explorer",
         "yoavbls.pretty-ts-errors",
     ]
 }
