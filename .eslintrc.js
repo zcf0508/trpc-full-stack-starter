@@ -63,7 +63,7 @@ module.exports = {
           'packages/trpc/tsconfig.json', 
           'packages/nuxt/tsconfig.json', 
           'packages/uniapp/tsconfig.json', 
-          'tsconfig.test.json',
+          'tsconfig.json',
         ],
       },
       parser: '@typescript-eslint/parser',

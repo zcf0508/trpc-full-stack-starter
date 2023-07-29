@@ -1,8 +1,30 @@
 {
-  "files": [],
-  "references": [
-    {"path": "packages/nuxt/tsconfig.json"},
-    {"path": "packages/trpc/tsconfig.json"},
-    {"path": "packages/uniapp/tsconfig.json"}
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "esnext",
+    "lib": ["esnext"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "jsx": "preserve",
+    "types": [
+      "vitest/globals", 
+      "node"
+    ]
+  },
+	"include": [
+    "**/*.config.ts",
+    "vitest.workspace.ts",
+    "**/tests/unit/*",
+    "**/__tests__/*"
+	],
+  "exclude": [
+    "packages/nuxt",
+    "node_modules",
+    "**/node_modules/*"
   ]
 }

@@ -26,10 +26,5 @@
   },
   "include": [
     "src",
-    "vite.config.ts",
-    "unocss.config.ts"
   ],
-  "exclude": [
-    "node_modules"
-  ]
 }
