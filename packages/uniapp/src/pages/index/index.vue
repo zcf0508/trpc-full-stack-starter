@@ -2,21 +2,38 @@
   <view class="content">
     <image class="logo" src="/static/logo.png" />
     <hello-world :msg="title" />
-    {{ user }}
+    list: {{ user }}
+    <view class="w-full px-3 box-border">
+      <text>name: </text>
+      <input v-model="nameInput" class="border border-solid" />
+    </view>
+    <view class="mt-1">
+      <button @click="addUser">
+        add
+      </button>
+    </view>
   </view>
 </template>
 
 <script setup lang="ts">
 const title = ref('Hello Uniapp');
-import { getUserList } from '@/api/user';
-import type { User } from '!!/trpc/db';
+import { getUserList, createUser } from '@/api/user';
+import type { UserModel } from '!!/trpc/model/user';
 
-const user = ref<User[]>([]);
+const user = ref<UserModel[]>([]);
 
 onBeforeMount(async () => {
   user.value = await getUserList();
 });
 
+const nameInput = ref('');
+
+async function addUser() {
+  if(nameInput.value.trim()!=='') {
+    await createUser(nameInput.value.trim());
+    user.value = await getUserList();
+  }
+}
 </script>
 
 <style>
