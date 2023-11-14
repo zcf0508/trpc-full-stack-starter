@@ -7,7 +7,7 @@ import Components from 'unplugin-vue-components/vite';
 import { viteCommonjs } from '@originjs/vite-plugin-commonjs';
 
 // https://vitejs.dev/config/
-export default defineConfig(({ command, mode }) => {
+export default defineConfig(() => {
   const plugins = [
     viteCommonjs(),
     AutoImport({
@@ -44,7 +44,6 @@ export default defineConfig(({ command, mode }) => {
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './src'),
-        '!!/trpc': path.resolve(__dirname, '../trpc/src'),
       },
     },
     test: {

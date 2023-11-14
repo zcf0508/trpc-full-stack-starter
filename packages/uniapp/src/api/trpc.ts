@@ -1,6 +1,6 @@
 import { createTRPCProxyClient, httpBatchLink } from '@trpc/client';
-import type { AppRouter } from '!!/trpc/index';
-// @ts-ignore
+import type { AppRouter } from '../../../trpc/src';
+// @ts-expect-error - no types
 import { fetch as uniFetch } from 'uni-fetch';
 import { FetchEsque } from '@trpc/client/dist/internals/types';
 

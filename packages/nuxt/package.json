@@ -11,9 +11,9 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@trpc/client": "^10.35.0",
-    "@types/node": "^18.16.19",
+    "@trpc/client": "^10.43.3",
+    "@types/node": "^18.18.9",
     "nuxt": "^3.6.5",
-    "vue": "^3.3.4"
+    "vue": "^3.3.8"
   }
 }

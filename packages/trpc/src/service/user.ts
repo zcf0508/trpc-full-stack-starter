@@ -1,5 +1,5 @@
-import type { UserModel } from '@/model/user';
-import { users } from '@/model/user';
+import type { UserModel } from '../model/user';
+import { users } from '../model/user';
 
 export const userService = {
   findMany: async () => new Promise<UserModel[]>((resolve) => {

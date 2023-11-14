@@ -3,9 +3,4 @@
   "extends": [
     "./.nuxt/tsconfig.json",
   ],
-  "compilerOptions": {
-    "paths": {
-      "!!/trpc/*": ["../trpc/src/*"]
-    }
-  },
 }

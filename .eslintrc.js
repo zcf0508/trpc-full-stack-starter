@@ -60,7 +60,6 @@ module.exports = {
       parserOptions: {
         tsconfigRootDir: process.cwd(),
         project: [
-          'packages/trpc/tsconfig.json', 
           'packages/nuxt/tsconfig.json', 
           'packages/uniapp/tsconfig.json', 
           'tsconfig.json',

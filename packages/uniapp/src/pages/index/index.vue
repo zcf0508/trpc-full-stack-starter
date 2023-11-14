@@ -18,7 +18,7 @@
 <script setup lang="ts">
 const title = ref('Hello Uniapp');
 import { getUserList, createUser } from '@/api/user';
-import type { UserModel } from '!!/trpc/model/user';
+import type { UserModel } from '../../../../trpc/src/model/user';
 
 const user = ref<UserModel[]>([]);
 

@@ -1,8 +1,8 @@
 import { z } from 'zod';
-import { userService } from '@/service/user';
-import { publicProcedure } from '@/trpc';
+import { userService } from '../service/user';
+import { router, publicProcedure } from '../trpc';
 
-export const userController = {
+export const userController = router({
   userList: publicProcedure
     .query(async () => {
       // Retrieve users from a datasource, this is an imaginary database
@@ -27,4 +27,4 @@ export const userController = {
       const user = await userService.create(input);
       return user;
     }),
-};
+});

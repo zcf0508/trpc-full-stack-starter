@@ -1,11 +1,9 @@
-import { router } from './trpc';
+import { mergeRouters } from './trpc';
 import { createHTTPServer } from '@trpc/server/adapters/standalone';
 import cors from 'cors';
-import { userController } from '@/api/user';
+import { userController } from './api/user';
 
-const appRouter = router({
-  ...userController,
-});
+const appRouter = mergeRouters(userController);
 
 // Export type router type signature,
 // NOT the router itself.
